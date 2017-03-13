@@ -7,4 +7,4 @@ This toolbox exercise was developed by [Patrick Huston](https://github.com/phust
 
 The code takes a list of lists that serves as the database to the website user information.
 
-The profiles can be accessed both through the index page and through the URL. Each user's profile page is indexed as /profile/user_number.
+The user profiles can be accessed both through the index page and through the URL. Each user's profile page is indexed as /profile/user_number.
