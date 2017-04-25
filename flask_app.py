@@ -9,7 +9,7 @@ and ~/hello/<your_name> to reach the "hello" page.
 Author: Onur Talu
 """
 
-import os.environ
+import os
 from flask import Flask, request
 from flask import render_template, redirect, url_for
 import database
