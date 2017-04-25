@@ -9,6 +9,7 @@ and ~/hello/<your_name> to reach the "hello" page.
 Author: Onur Talu
 """
 
+import os.environ
 from flask import Flask, request
 from flask import render_template, redirect, url_for
 import database
@@ -90,4 +91,6 @@ def profile(user_no=None):
 
 if __name__ == '__main__':
     app.debug = True  # updates the page as the code is saved
-    app.run()
+    HOST = '0.0.0.0' if 'PORT' in os.environ else '127.0.0.1'
+    PORT = int(os.environ.get('PORT', 5000)))
+    app.run(host=HOST, port=PORT)
