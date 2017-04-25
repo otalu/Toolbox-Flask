@@ -2,16 +2,48 @@
 <html>
 
 <head>
-    <title>
+      <title>
         A Small Hello
     </title>
+
+<!-- <link rel="stylesheet" type="text/css" href="/static/index_style.css"> -->
+
+<style>
+      body {
+          background-color: lightblue;
+      }
+      h1 {
+          color: navy;
+          font-size: 40px;
+      }
+      h2 {
+          color: navy;
+          font-size: 18px;
+      }
+      form {
+          margin-left: 12px;
+          background-color: lightblue;
+      }
+      img {
+        /*width: 700px;
+        height: 400px;*/
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+</style>
+
+
 </head>
 
 <body>
-    <h1>Hellllllllllllllllllllllllloo there</h1>
-    <p>Please tell us about yourself.</p>
+    <h1>Hello</h1>
+    <h2>Is it a SoftDes MP5 you are looking for?</h2>
+    <p>Please tell us about yourself:</p>
+
+    <img src="http://tinyurl.com/k6owoun">
+
     <fieldset>
-    <form action="/login" method="post">
+    <form action="/login" method="post"
         <legend> We are definitely not storing this information.<legend><br>
         First name:<br>
         <input type="text" name="firstname"><br>
@@ -23,6 +55,7 @@
         <input type="text" name="ninja"><br><br>
         <input type="submit" value="Submit">
     </form>
+    </fieldset>
 </body>
 
 </html>
