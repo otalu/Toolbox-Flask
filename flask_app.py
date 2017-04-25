@@ -92,5 +92,5 @@ def profile(user_no=None):
 if __name__ == '__main__':
     app.debug = True  # updates the page as the code is saved
     HOST = '0.0.0.0' if 'PORT' in os.environ else '127.0.0.1'
-    PORT = int(os.environ.get('PORT', 5000))
+    PORT = int(os.environ.get('PORT', 443))
     app.run(host=HOST, port=PORT)
